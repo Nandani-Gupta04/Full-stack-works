@@ -15,3 +15,6 @@ A full-stack web application built using the MERN stack.
 bash
 npm install
 
+👨‍💻 Author
+
+Your Name
