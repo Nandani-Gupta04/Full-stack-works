@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Mini-Site</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif ;
+            line-height: 1.6;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        footer{
+            background-color: rgb(3, 104, 172);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+header {
+    background-color: rgb(3, 104, 172);
+   color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-right: 50px;
+    }
+    h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        nav a:hover {
+            color: red;
+        }
+         main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            scroll-margin-top: 2rem; }
+        h2 {
+            margin-top: 0;
+            color: var(--text-color);
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 0.5rem;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Student Mini-Site</h1>
+        <nav>
+            
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#projects">Projects</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome</h2>
+            <p>Welcome to my Tech Fellows mini-site! I am building this project to master HTML navigation, relative file paths, and media integration. Over the next few weeks, this space will evolve into a full portfolio of my web development work.</p>
+            <p>Learning how to structure paths correctly is essential for ensuring assets like images and stylesheets load perfectly across different environments, including GitHub Pages.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Learning Projects</h2>
+            <ul>
+                <li><strong>Day 1:</strong> First HTML page - Building basic semantic structures.</li>
+                <li><strong>Day 2:</strong> Structured profile page - Implementing text formatting and semantic layouts.</li>
+                <li><strong>Day 3:</strong> Linked mini-site - Connecting pages and managing local assets.</li>
+                <li><strong>Day 4:</strong> Upcoming Sprint - Preparing for CSS styling foundations.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created for Tech Fellows Day 3.</p>
+    </footer>
+
+</body>
+</html>
