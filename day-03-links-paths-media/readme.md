@@ -13,7 +13,6 @@ day-03-links-paths-media/
 ├── README.md
 ├── index.html
 ├── about.html
-├── day-03-reflection.md
 └── profile.png
     
 ```
