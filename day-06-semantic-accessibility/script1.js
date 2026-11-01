@@ -1,0 +1,1 @@
+console.log("Day 03 project loaded successfully!");

@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <head>Registration Form</head>
+        <style>
+*{
+    box-sizing: border-box;
+}
+header,footer{
+    background-color: rgb(67, 67, 250);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            margin: 0;
+            color: #1e293b;
+        }
+.main{
+    max-width: 600px;
+            margin: 30px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #00000015;
+}
+.form-grp{
+    margin-bottom: 18px;
+}
+label{
+    display: block;
+}
+input, select, textarea {
+            width: 100%;
+            padding: 11px;
+            border: 1px solid #cbd5e1;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .btn{
+            align-items: center;
+            background-color: rgb(67, 67, 250);
+            color: white;
+            margin-left: 165px;
+            border-radius: 5px;
+            height: 40px;
+            width: 200px;
+            font-size: 18px;
+        }
+        .radio-option,
+        .checkbox-option {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            margin: 10px 0;
+        }
+
+        .radio-option input,
+        .checkbox-option input {
+            width: auto;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+        <h1>Student Registration Demo</h1>
+        <p>Welcome to the student registration page</p>
+    </header>
+
+        <main class="main">
+            <h2>Registration Form</h2>
+            <form>
+                <div class="form-grp">
+                    <label>Full Name:</label>
+                    <input type="text" placeholder="Enter your name"
+                    required/>
+
+                </div>
+                 <div class="form-grp">
+                    <label>Email:</label>
+                    <input type="email" placeholder="Enter your email"
+                    required/>
+
+                </div>
+                 <div class="form-grp">
+                    <label>Age: </label>
+                    <input type="number" placeholder="Enter your age"
+                    required/>
+
+                </div>
+                 <div class="form-grp">
+                    <label>Select Course:</label>
+                    <select required >
+                        <option value="">-- Choose a Course --</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    </select>
+
+                </div>
+                <div class="form-grp">
+                    <label>Study Mode: </label>
+                    <div class="radio-option">
+                    <input type="radio" name="STUDYMODE" value="Online"
+                    required/>
+                    <label>Online</label>
+</div>
+<div class="radio-option">
+                    <input type="radio" name="STUDYMODE" value="offline"
+                    required/>
+                    <label>Offline</label>
+</div>
+<div class="radio-option">
+                    <input type="radio" name="STUDYMODE" value="hybrid"
+                    required/>
+                    <label>Hybrid</label>
+</div>
+                </div>
+                <div class="form-grp">
+                    <label>Learning Goals</label>
+                    <textarea
+                    name="goals"
+                    rows="4"
+                    placeholder="Write about your learning goals...">
+                </textarea>
+            </div>
+
+                </div>
+                <div class="form-grp">
+                <div class="checkbox-option">
+                    <input
+                        type="checkbox"
+                        name="confirmation"
+                        required>
+                    <label for="confirmation">
+                        I confirm that this is practice data.
+                    </label>
+                </div>
+            </div>
+            <button class="btn" value="submit">Submit</button>
+            </form>
+        </main>
+        <footer>&copy; 2026 Student Registration</footer>
+    </body>
+</html>
