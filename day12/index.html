@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>
+            Day 11 Mini Project
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    </head>
+    <body>
+<main class="main">
+    <h1>Student Registration Form</h1>
+    <form action="#" method="post">
+      <div class="form-grp">
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your name" required/>
+</div>
+<div class="form-grp">
+    <label>Email:</label>
+    <input type="email" placeholder="Enter your email" required/>
+</div>
+<div class="form-grp">
+    <label>Contact No.:</label>
+    <input type="number" placeholder="+91 10 digit" class="hint" required/>
+</div>
+<div class="form-grp">
+    <label>City:</label>
+    <select>
+          <option value="">-- Select your City --</option>
+          <option>Vapi</option>          
+          <option>Valasd</option>
+          <option>Pardi</option>
+          <option>Bhilad</option>
+          <option>Surat</option>        
+          <option>Bharuch</option>
+  <option>Ankleshwar</option>
+        </select>
+</div>
+<div class="form-grp">
+    <label>Gender: </label>
+    <div class="radio-option">
+                    <input type="radio" name="Gender" value="Male"
+                    required/>
+                    <label>Male</label>
+
+<div class="radio-option">
+    <input type="radio" name="Gender" value="Female"required/>
+    <label>Female</label>
+</div>
+</div>
+<div class="form-grp">
+    <label>Stream</label>
+    <select><option>BBA</option>
+    <option>BCom</option><option>BCA</option><option>BSC</option></select>
+</div>
+<div class="checkbox-option" >
+
+                    <input
+                        type="checkbox"
+                        name="confirmation"
+                        required>
+                    <label for="confirmation">
+                        I confirm that this is practice data.
+                    </label>
+                </div>
+                            <button class="btn" value="submit">Submit</button>
+
+    </form>
+</main>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+:root{
+    --primary:lightgrey;
+    --accent:darkblue;
+    --bg:lightblue;
+    --text:black;
+    --error:red;
+    --font-heading:"Poppins",Arial, sans-serif;
+    --font-body:"Inter","Segoe UI",Arial,sans-serif;
+}
+body{
+    background-color: var(--bg);
+    color: var(--text);
+    font: var(--font-body);
+}
+h1{
+    text-align: center;
+    color: var(--accent);
+    font: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+*{
+    box-sizing: border-box;
+}
+.main{
+    max-width: 600px;
+            margin: 30px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #00000015;
+}
+.form-grp{
+    margin-bottom: 18px;
+}
+label{
+    display: block;
+    font-weight: 600;
+    size: 0.95rem;
+}
+input, select{
+            width: 100%;
+            padding: 11px;
+            border: 1px solid var(--primary);
+            border-radius: 5px;
+            font-size: 1rem;
+            outline: none; 
+            font: inherit;
+    transition: border-color 0.2s ease;
+    line-height: 1.6;
+        }
+       
+        .btn{
+            align-items: center;
+            background-color:rgb(1, 1, 88);
+            color:white;
+            margin-left: 165px;
+            border-radius: 5px;
+            height: 40px;
+            width: 200px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05rem;
+            font-weight: 600;
+        }
+        input:focus, 
+select:focus {
+    border: 2px solid var(--accent);
+}
+        .radio-option,
+        .checkbox-option {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            margin: 10px 0;
+        }
+
+        .radio-option input,
+        .checkbox-option input {
+            width: auto;
+        }
+    .hint{
+        color: var(--primary);
+    }
+    .btn:hover{
+background-color: var(--accent);
+    }
+input:user-invalid {
+    border: 2px solid var(--error);
+}
+
